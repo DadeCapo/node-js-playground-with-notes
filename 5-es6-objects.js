@@ -17,8 +17,8 @@ console.log(user)
 
 const product = {
     label: 'Red Book',
-    price: 3,
-    stock: 201,
+    price: 2,
+    stock: 305,
     salePrice: undefined
 }
 
@@ -30,7 +30,7 @@ const product = {
 // console.log(stock)
 // console.log(rating)
 
-const transaction = (type, { label, stock }) => {
+const transaction = (type, { label, stock = 0 } = {}) => {
     console.log(type, label, stock)
 }
 
